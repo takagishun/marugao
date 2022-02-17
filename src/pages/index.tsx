@@ -1,53 +1,71 @@
 import type { NextPage } from "next";
-import { Image } from "next/image";
+import Image from "next/image";
 import styles from "./style.module.scss";
 
 const Home: NextPage = () => {
   return (
-    <>
-      {/*<h1>*/}
-      {/*  <Image src="/base-marugao.png" alt="丸顔ロゴ" />*/}
-      {/*</h1>*/}
+    <div className={styles.root}>
       <nav className={styles.nav}>
-        <ul>
-          <li className={styles.biography}>
-            <a href="">Biography</a>
+        <h1 className={styles.logo}>
+          <Image
+            className={styles.logoImg}
+            src="/marugao-logo.png"
+            alt="丸顔ロゴ"
+            width="150"
+            height="150"
+          />
+        </h1>
+        <ul className={styles.navList}>
+          <li className={`${styles.navItem} ${styles.biography}`}>
+            <a href="" className={`${styles.navLink} ${styles.biographyLink}`}>
+              Biography
+            </a>
           </li>
-          <li className={styles.collection}>
-            <a href="">COLLECTION</a>
+          <li className={`${styles.navItem} ${styles.collection}`}>
+            <a href="" className={`${styles.navLink} ${styles.collectionLink}`}>
+              COLLECTION
+            </a>
           </li>
-          <li>
-            <a href="">COMSA</a>
+          <li className={`${styles.navItem} ${styles.comsa}`}>
+            <a href="" className={`${styles.navLink} ${styles.comsaLink}`}>
+              COMSA
+            </a>
           </li>
-          <li>
-            <a href="">Twitter</a>
+          <li className={`${styles.navItem} ${styles.twitter}`}>
+            <a href="" className={`${styles.navLink} ${styles.twitterLink}`}>
+              Twitter
+            </a>
           </li>
-          <li>
-            <a href="">Instagram</a>
+          <li className={`${styles.navItem} ${styles.instagram}`}>
+            <a href="" className={`${styles.navLink} ${styles.instagramLink}`}>
+              Instagram
+            </a>
           </li>
-          <li>
-            <a href="">Job Offer</a>
+          <li className={`${styles.navItem} ${styles.jobOffer}`}>
+            <a href="" className={`${styles.navLink} ${styles.jobOfferLink}`}>
+              Job&nbsp;Offer
+            </a>
           </li>
         </ul>
       </nav>
-      <div className={styles.a}>MARUGAO</div>
-      <div>丸顔</div>
-      <div>マルガオ</div>
-      <div>まるがお</div>
-      <div>MARUGAO</div>
-      <div>マルガオ</div>
-      <div>丸顔</div>
-      <div>MARUGAO</div>
-      <div>マルガオ</div>
-      <div>丸顔</div>
-      <div>丸顔</div>
-      <div>まるがお</div>
-      <div>マルガオ</div>
-      <div>マルガオ</div>
-      <div>丸顔</div>
-      <div>まるがお</div>
-      <div>MARUGAO</div>
-    </>
+      {/*<div className={styles.a}>MARUGAO</div>*/}
+      {/*<div>丸顔</div>*/}
+      {/*<div>マルガオ</div>*/}
+      {/*<div>まるがお</div>*/}
+      {/*<div>MARUGAO</div>*/}
+      {/*<div>マルガオ</div>*/}
+      {/*<div>丸顔</div>*/}
+      {/*<div>MARUGAO</div>*/}
+      {/*<div>マルガオ</div>*/}
+      {/*<div>丸顔</div>*/}
+      {/*<div>丸顔</div>*/}
+      {/*<div>まるがお</div>*/}
+      {/*<div>マルガオ</div>*/}
+      {/*<div>マルガオ</div>*/}
+      {/*<div>丸顔</div>*/}
+      {/*<div>まるがお</div>*/}
+      {/*<div>MARUGAO</div>*/}
+    </div>
   );
 };
 

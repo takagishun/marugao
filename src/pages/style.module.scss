@@ -1,13 +1,112 @@
+.root {
+  width: 100%;
+  height: 100%;
+}
+
+.logoImg {
+  border-radius: 50%;
+}
+
 .nav {
-  width: 980px;
+  width: 700px;
+  height: 100%;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navList {
+  position: relative;
+  left: -75px;
+}
+
+.logo {
+
+}
+
+.navItem {
+  position: absolute;
+}
+
+.navLink {
+  display: inline-block;
+  color: #111;
+  font-size: 36px;
+  font-weight: 900;
+  font-family: 'Hiragino Sans', 'Arial Narrow', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+  transition: all  0.3s ease;
 }
 
 .biography {
-  position: absolute;
+  top: -168px;
+  left: -124px;
+}
+
+.biographyLink {
+  font-size: 42px;
+  &:hover, &:focus-visible {
+    color: greenyellow;
+  }
+}
+
+.collection {
+  top: -102px;
+  left: 38px;
+}
+
+.collectionLink {
+  font-size: 34px;
+  &:hover, &:focus-visible {
+    color: rgba(250, 29, 21, 0.98);
+  }
+}
+
+.comsa {
+  top: -40px;
+  left: -320px;
+}
+
+.comsaLink {
+  font-size: 50px;
+  &:hover, &:focus-visible {
+    color: #2D3A9E;
+  }
+}
+
+.twitter {
+  top: -40px;
+  left: 84px;
+}
+
+.twitterLink {
+  font-size: 50px;
+  &:hover, &:focus-visible {
+    color: #1d9bf0;
+  }
+}
+
+
+.instagram {
   top: 100px;
-  left: 250px;
-  font-size: 30px;
-  font-weight: 700;
+  left: -184px;
+}
+
+.instagramLink {
+  font-size: 46px;
+  &:hover, &:focus-visible {
+    color: #E56F2F;
+  }
+}
+
+.jobOffer {
+  top: 224px;
+  left: 74px;
+}
+
+.jobOfferLink {
+  &:hover, &:focus-visible {
+    color: #7729E2;
+  }
 }
